@@ -36,7 +36,13 @@ namespace Form_Yurt_Otomasyonu_SQL
             }
             bgl.baglanti().Close();
 
-
+            SqlCommand komut3 = new SqlCommand("select odemeay, sum(odememiktar) from kasa group by odemeay", bgl.baglanti());
+            SqlDataReader oku3 = komut3.ExecuteReader();
+            while (oku3.Read())
+            {
+                this.chart1.Series["Aylık"].Points.AddXY(oku3[0], oku3[1]);
+            }
+            bgl.baglanti().Close();
         }
 
         private void CmbAy_SelectedIndexChanged(object sender, EventArgs e)

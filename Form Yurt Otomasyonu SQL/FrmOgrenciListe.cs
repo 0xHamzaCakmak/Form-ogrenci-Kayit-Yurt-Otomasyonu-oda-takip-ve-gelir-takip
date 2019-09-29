@@ -41,6 +41,8 @@ namespace Form_Yurt_Otomasyonu_SQL
             fr.adres = dataGridView1.Rows[secilen].Cells[10].Value.ToString();
             fr.bolum = dataGridView1.Rows[secilen].Cells[11].Value.ToString();
             fr.Show();
+            this.Hide();
+            secilen = 0;
         }
     }
 }

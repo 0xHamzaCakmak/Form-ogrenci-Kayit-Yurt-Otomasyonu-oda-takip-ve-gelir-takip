@@ -56,5 +56,95 @@ namespace Form_Yurt_Otomasyonu_SQL
         {
             axWindowsMediaPlayer1.URL = "https://www.canli-radyo.biz/2013/07/kral-fm-dinle.html";
         }
+
+        private void öğrenciEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOgrenciKayit frm = new FrmOgrenciKayit();
+            frm.Show();
+        }
+
+        private void öğrenciListesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOgrenciListe frm = new FrmOgrenciListe();
+            frm.Show();
+            
+        }
+
+        private void öğrenciDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOgrenciListe frm = new FrmOgrenciListe();
+            frm.Show();
+
+        }
+
+        private void bölümEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBolumler frm = new FrmBolumler();
+            frm.Show();
+        }
+
+        private void blümDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBolumler frm = new FrmBolumler();
+            frm.Show();
+        }
+
+        private void bölümSilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBolumler frm = new FrmBolumler();
+            frm.Show();
+        }
+
+        private void ödemeAlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOdemeler frm = new FrmOdemeler();
+            frm.Show();
+        }
+
+        private void giderEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGider frm = new FrmGider();
+            frm.Show();
+        }
+
+        private void giderListesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGiderListesi frm = new FrmGiderListesi();
+            frm.Show();
+        }
+
+        private void şifreİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmYoneticiislemleri frm = new FrmYoneticiislemleri();
+            frm.Show();
+        }
+
+        private void personelDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPersonel frm = new FrmPersonel();
+            frm.Show();
+        }
+
+        private void gelirİstatistikleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGeliristatistik frm = new FrmGeliristatistik();
+            frm.Show();
+        }
+
+        private void öğrenciSilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOgrenciListe frm = new FrmOgrenciListe();
+            frm.Show();
+        }
+
+        private void hakkımızdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bu Program Hamza Çakmak Tarafında 29.09.2019 tarihinde Tamamlanmıştır...", "Öğrenci Yurt Otomasyonu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

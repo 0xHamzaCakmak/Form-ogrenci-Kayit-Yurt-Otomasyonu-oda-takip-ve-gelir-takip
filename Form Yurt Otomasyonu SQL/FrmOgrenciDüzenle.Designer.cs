@@ -54,6 +54,7 @@
             this.TxtOgrenciad = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.TxtOgrid = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -79,10 +80,10 @@
             // BtnDuzenle
             // 
             this.BtnDuzenle.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnDuzenle.Location = new System.Drawing.Point(254, 442);
+            this.BtnDuzenle.Location = new System.Drawing.Point(198, 442);
             this.BtnDuzenle.Name = "BtnDuzenle";
             this.BtnDuzenle.Size = new System.Drawing.Size(105, 32);
-            this.BtnDuzenle.TabIndex = 46;
+            this.BtnDuzenle.TabIndex = 13;
             this.BtnDuzenle.Text = "Güncelle";
             this.BtnDuzenle.UseVisualStyleBackColor = true;
             this.BtnDuzenle.Click += new System.EventHandler(this.BtnDuzenle_Click);
@@ -93,7 +94,7 @@
             this.RichAdres.Location = new System.Drawing.Point(196, 365);
             this.RichAdres.Name = "RichAdres";
             this.RichAdres.Size = new System.Drawing.Size(254, 71);
-            this.RichAdres.TabIndex = 45;
+            this.RichAdres.TabIndex = 12;
             this.RichAdres.Text = "";
             // 
             // label11
@@ -114,7 +115,7 @@
             this.MskVeliTel.Mask = "(999) 000-0000";
             this.MskVeliTel.Name = "MskVeliTel";
             this.MskVeliTel.Size = new System.Drawing.Size(254, 26);
-            this.MskVeliTel.TabIndex = 43;
+            this.MskVeliTel.TabIndex = 11;
             // 
             // label10
             // 
@@ -143,7 +144,7 @@
             this.TxtVeliAdSoy.Location = new System.Drawing.Point(198, 289);
             this.TxtVeliAdSoy.Name = "TxtVeliAdSoy";
             this.TxtVeliAdSoy.Size = new System.Drawing.Size(254, 26);
-            this.TxtVeliAdSoy.TabIndex = 40;
+            this.TxtVeliAdSoy.TabIndex = 10;
             // 
             // CmbOdano
             // 
@@ -153,7 +154,7 @@
             this.CmbOdano.Location = new System.Drawing.Point(198, 258);
             this.CmbOdano.Name = "CmbOdano";
             this.CmbOdano.Size = new System.Drawing.Size(254, 27);
-            this.CmbOdano.TabIndex = 39;
+            this.CmbOdano.TabIndex = 9;
             // 
             // label8
             // 
@@ -183,7 +184,7 @@
             this.CmbBolum.Location = new System.Drawing.Point(198, 186);
             this.CmbBolum.Name = "CmbBolum";
             this.CmbBolum.Size = new System.Drawing.Size(254, 27);
-            this.CmbBolum.TabIndex = 36;
+            this.CmbBolum.TabIndex = 7;
             // 
             // label6
             // 
@@ -203,7 +204,7 @@
             this.MskDogum.Mask = "00/00/0000";
             this.MskDogum.Name = "MskDogum";
             this.MskDogum.Size = new System.Drawing.Size(254, 26);
-            this.MskDogum.TabIndex = 34;
+            this.MskDogum.TabIndex = 6;
             this.MskDogum.ValidatingType = typeof(System.DateTime);
             // 
             // label5
@@ -224,7 +225,7 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(254, 26);
-            this.MskTelefon.TabIndex = 32;
+            this.MskTelefon.TabIndex = 5;
             // 
             // label4
             // 
@@ -244,7 +245,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(254, 26);
-            this.MskTC.TabIndex = 30;
+            this.MskTC.TabIndex = 4;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // TxtMail
@@ -254,7 +255,7 @@
             this.TxtMail.Location = new System.Drawing.Point(198, 224);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(254, 26);
-            this.TxtMail.TabIndex = 29;
+            this.TxtMail.TabIndex = 8;
             // 
             // label3
             // 
@@ -273,7 +274,7 @@
             this.TxtOgrSoyad.Location = new System.Drawing.Point(198, 72);
             this.TxtOgrSoyad.Name = "TxtOgrSoyad";
             this.TxtOgrSoyad.Size = new System.Drawing.Size(254, 26);
-            this.TxtOgrSoyad.TabIndex = 27;
+            this.TxtOgrSoyad.TabIndex = 3;
             // 
             // label2
             // 
@@ -292,7 +293,7 @@
             this.TxtOgrenciad.Location = new System.Drawing.Point(198, 41);
             this.TxtOgrenciad.Name = "TxtOgrenciad";
             this.TxtOgrenciad.Size = new System.Drawing.Size(254, 26);
-            this.TxtOgrenciad.TabIndex = 25;
+            this.TxtOgrenciad.TabIndex = 2;
             // 
             // label13
             // 
@@ -311,7 +312,18 @@
             this.TxtOgrid.Location = new System.Drawing.Point(196, 9);
             this.TxtOgrid.Name = "TxtOgrid";
             this.TxtOgrid.Size = new System.Drawing.Size(254, 26);
-            this.TxtOgrid.TabIndex = 48;
+            this.TxtOgrid.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(309, 442);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 32);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Sil";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmOgrenciDüzenle
             // 
@@ -319,6 +331,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(486, 480);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtOgrid);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.BtnDuzenle);
@@ -381,5 +394,6 @@
         private System.Windows.Forms.TextBox TxtOgrenciad;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox TxtOgrid;
+        private System.Windows.Forms.Button button1;
     }
 }

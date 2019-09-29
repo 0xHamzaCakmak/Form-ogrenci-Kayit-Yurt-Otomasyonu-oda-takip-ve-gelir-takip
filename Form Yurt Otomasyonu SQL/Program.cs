@@ -16,7 +16,7 @@ namespace Form_Yurt_Otomasyonu_SQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmAnaForm());
+            Application.Run(new FrmAdminGiris());
         }
     }
 }

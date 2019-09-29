@@ -81,7 +81,7 @@
             this.TxtOgrSoyad.Location = new System.Drawing.Point(139, 40);
             this.TxtOgrSoyad.Name = "TxtOgrSoyad";
             this.TxtOgrSoyad.Size = new System.Drawing.Size(254, 26);
-            this.TxtOgrSoyad.TabIndex = 3;
+            this.TxtOgrSoyad.TabIndex = 2;
             // 
             // label2
             // 
@@ -100,7 +100,7 @@
             this.TxtMail.Location = new System.Drawing.Point(139, 192);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(254, 26);
-            this.TxtMail.TabIndex = 5;
+            this.TxtMail.TabIndex = 7;
             // 
             // label3
             // 
@@ -120,7 +120,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(254, 26);
-            this.MskTC.TabIndex = 6;
+            this.MskTC.TabIndex = 3;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // MskTelefon
@@ -131,7 +131,7 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(254, 26);
-            this.MskTelefon.TabIndex = 8;
+            this.MskTelefon.TabIndex = 4;
             // 
             // label4
             // 
@@ -151,7 +151,7 @@
             this.MskDogum.Mask = "00/00/0000";
             this.MskDogum.Name = "MskDogum";
             this.MskDogum.Size = new System.Drawing.Size(254, 26);
-            this.MskDogum.TabIndex = 10;
+            this.MskDogum.TabIndex = 5;
             this.MskDogum.ValidatingType = typeof(System.DateTime);
             // 
             // label5
@@ -182,7 +182,7 @@
             this.CmbBolum.Location = new System.Drawing.Point(139, 154);
             this.CmbBolum.Name = "CmbBolum";
             this.CmbBolum.Size = new System.Drawing.Size(254, 27);
-            this.CmbBolum.TabIndex = 12;
+            this.CmbBolum.TabIndex = 6;
             // 
             // label7
             // 
@@ -202,7 +202,7 @@
             this.CmbOdano.Location = new System.Drawing.Point(139, 226);
             this.CmbOdano.Name = "CmbOdano";
             this.CmbOdano.Size = new System.Drawing.Size(254, 27);
-            this.CmbOdano.TabIndex = 15;
+            this.CmbOdano.TabIndex = 8;
             // 
             // label8
             // 
@@ -231,7 +231,7 @@
             this.TxtVeliAdSoy.Location = new System.Drawing.Point(139, 257);
             this.TxtVeliAdSoy.Name = "TxtVeliAdSoy";
             this.TxtVeliAdSoy.Size = new System.Drawing.Size(254, 26);
-            this.TxtVeliAdSoy.TabIndex = 16;
+            this.TxtVeliAdSoy.TabIndex = 9;
             // 
             // MskVeliTel
             // 
@@ -241,7 +241,7 @@
             this.MskVeliTel.Mask = "(999) 000-0000";
             this.MskVeliTel.Name = "MskVeliTel";
             this.MskVeliTel.Size = new System.Drawing.Size(254, 26);
-            this.MskVeliTel.TabIndex = 19;
+            this.MskVeliTel.TabIndex = 10;
             // 
             // label10
             // 
@@ -269,7 +269,7 @@
             this.RichAdres.Location = new System.Drawing.Point(137, 333);
             this.RichAdres.Name = "RichAdres";
             this.RichAdres.Size = new System.Drawing.Size(254, 78);
-            this.RichAdres.TabIndex = 21;
+            this.RichAdres.TabIndex = 11;
             this.RichAdres.Text = "";
             // 
             // BtnKaydet
@@ -278,7 +278,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(191, 417);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(105, 32);
-            this.BtnKaydet.TabIndex = 22;
+            this.BtnKaydet.TabIndex = 12;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);

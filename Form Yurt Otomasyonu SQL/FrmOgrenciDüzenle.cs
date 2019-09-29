@@ -19,6 +19,24 @@ namespace Form_Yurt_Otomasyonu_SQL
         }
         public string id,ad,soyad,TC,telefon,dogum,bolum,mail,odano,veliad,velitel,adres;
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komutsil = new SqlCommand("delete from Ogrenci where ogrid=@id", bgl.baglanti());
+            komutsil.Parameters.AddWithValue("@id", TxtOgrid.Text);
+            komutsil.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+            SqlCommand komutoda = new SqlCommand("update odalar set odaaktif=odaaktif-1 where odano=@az1", bgl.baglanti());
+            komutoda.Parameters.AddWithValue("@az1", CmbOdano.Text);
+            komutoda.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+            FrmOgrenciListe frm = new FrmOgrenciListe();
+            frm.Show();
+            this.Hide();
+
+        }
+
         SQLBaglantim bgl = new SQLBaglantim();
         private void BtnDuzenle_Click(object sender, EventArgs e)
         {
@@ -37,6 +55,10 @@ namespace Form_Yurt_Otomasyonu_SQL
             komut.Parameters.AddWithValue("@p12", CmbBolum.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
+
+            FrmOgrenciListe frm = new FrmOgrenciListe();
+            frm.Show();
+            this.Hide();
         }
 
         private void FrmOgrenciDüzenle_Load(object sender, EventArgs e)

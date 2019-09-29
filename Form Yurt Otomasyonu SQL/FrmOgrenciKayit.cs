@@ -73,6 +73,10 @@ namespace Form_Yurt_Otomasyonu_SQL
             komutkaydet.ExecuteNonQuery();
             bgl.baglanti().Close();
 
+            FrmOgrenciListe ogrlis = new FrmOgrenciListe();
+            ogrlis.Show();
+            this.Hide();
+
             SqlCommand komut3 = new SqlCommand("select ogrid from Ogrenci", bgl.baglanti());
             SqlDataReader oku = komut3.ExecuteReader();
             while (oku.Read())
@@ -87,7 +91,14 @@ namespace Form_Yurt_Otomasyonu_SQL
             komut2.Parameters.AddWithValue("@b3", TxtOgrSoyad.Text);
             komut2.ExecuteNonQuery();
             bgl.baglanti().Close();
-            Listetemizle();
+            
+
+            SqlCommand komutoda = new SqlCommand("update odalar set odaAktif=odaAktif+1 Where OdaNo=@oda1", bgl.baglanti());
+            komutoda.Parameters.AddWithValue("@oda1", CmbOdano.Text);
+            komutoda.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+           // Listetemizle();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Form_Yurt_Otomasyonu_SQL
 {
@@ -16,15 +17,27 @@ namespace Form_Yurt_Otomasyonu_SQL
         {
             InitializeComponent();
         }
-
+        SQLBaglantim bgl = new SQLBaglantim();
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "admin3" && textBox2.Text == "010101*")
+            SqlCommand komut = new SqlCommand("select * from admin where yoneticiad=@p1 and yoneticisifre=@p2", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", textBox1.Text);
+            komut.Parameters.AddWithValue("@p2", textBox2.Text);
+            SqlDataReader oku = komut.ExecuteReader();
+            if (oku.Read())
             {
-                FrmAnaForm frm = new FrmAnaForm();
-                frm.Show();
+                FrmAnaForm fr = new FrmAnaForm();
+                fr.Show();
                 this.Hide();
             }
+            else
+            {
+                MessageBox.Show("hatalı kullanıcı adı yada şifre");
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox1.Focus();
+            }
+            bgl.baglanti().Close();
         }
     }
 }
